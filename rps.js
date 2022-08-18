@@ -1,28 +1,35 @@
 function getComputerChoice() {
     let x = Math.floor((Math.random() *3) +1)
     if (x === 1) {
-        return "Rock"
+        return "rock"
     } else if (x === 2) {
-        return "Paper"
+        return "paper"
     } else (x === 3);
-        return "Scissors"
+        return "scissors"
 }
 
-let pc = (getComputerChoice())
 
-let me
+let me 
+me = prompt("Rock, Paper, Scissors")
 
-if (pc === me) {
-    console.log ("Try again")
-} else if (pc == "Rock" && me == "scissors") {
+let pc
+pc = getComputerChoice()
+
+
+if (pc == "rock" && me == "scissors") {
     console.log("PC wins!")
-} else if (pc == "Rock" && me == "paper") {
+} else if (pc == "rock" && me == "paper") {
     console.log("You win!") 
-} else if (pc == "Scissors" && me == "rock") {
+} else if (pc == "scissors" && me == "rock") {
     console.log("You win!") 
-} else if (pc == "Scissors" && me == "paper") {
+} else if (pc == "scissors" && me == "paper") {
     console.log("PC Wins!")
 } else if (pc == "paper" && me == "rock") {
     console.log("PC wins!")
-} else if (pc === "Paper" && me == "Scissors");
-    console.log("You win!")
+} else if (pc === "paper" && me == "scissors") {
+    console.log("You win!") 
+} else if  (pc === me) {
+ console.log ("Try again") }
+
+
+ console.log(pc, me)
